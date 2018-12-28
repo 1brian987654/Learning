@@ -18,12 +18,16 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var mobile: NSTextField!
     
-    
+    var person = PersonProfile()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        name.stringValue = person.name
+        age.stringValue = person.age
+        address.stringValue = person.address
+        mobile.stringValue = person.mobile
     }
 
     override var representedObject: Any? {

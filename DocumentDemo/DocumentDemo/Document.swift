@@ -9,6 +9,8 @@
 import Cocoa
 
 class Document: NSDocument {
+    
+    var person = PersonProfile()
 
     override init() {
         super.init()
@@ -27,9 +29,8 @@ class Document: NSDocument {
     }
 
     override func data(ofType typeName: String) throws -> Data {
-        // Insert code here to write your document to data of the specified type, throwing an error in case of failure.
-        // Alternatively, you could remove this method and override fileWrapper(ofType:), write(to:ofType:), or write(to:ofType:for:originalContentsURL:) instead.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        var data = Data()
+        return data
     }
 
     override func read(from data: Data, ofType typeName: String) throws {
