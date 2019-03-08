@@ -1,4 +1,4 @@
-/// Copyright (c) 2018 Razeware LLC
+/// Copyright (c) 2019 Razeware LLC
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -28,39 +28,8 @@
 
 import UIKit
 
-class AuteurListViewController: UIViewController {
-  let auteurs = Auteur.auteursFromBundle()
-  @IBOutlet weak var tableView: UITableView!
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 34, weight: .bold) ]
-    navigationItem.largeTitleDisplayMode = .automatic
-    
-    tableView.rowHeight = UITableView.automaticDimension
-    tableView.estimatedRowHeight = 600
+class AuteurTableViewCell: UITableViewCell {
 
-  }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let destination = segue.destination as? AuteurDetailViewController,
-      let indexPath = tableView.indexPathForSelectedRow {
-      destination.selectedAuteur = auteurs[indexPath.row]
-    }
-  }
-}
+  @IBOutlet weak var bioLabel: UILabel!
 
-extension AuteurListViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return auteurs.count
-  }
- 
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AuteurTableViewCell
-    let auteur = auteurs[indexPath.row]
-    cell.bioLabel.text = auteur.bio
-    cell.bioLabel.textColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
-    return cell
-  }
 }
