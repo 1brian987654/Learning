@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UITestInSwift/ViewController.swift"
-            timestampString = "574164177.2579401"
+            timestampString = "574254013.664803"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "dynamicDataConfig()"
             landmarkType = "7">
          </BreakpointContent>
