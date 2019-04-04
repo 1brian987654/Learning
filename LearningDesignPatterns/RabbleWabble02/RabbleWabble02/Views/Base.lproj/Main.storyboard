@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="RabbleWabble02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="QuestionView" customModule="RabbleWabble02" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-S8-Mc7">
+                                <rect key="frame" x="0.0" y="80" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RP-dc-YE8">
+                                <rect key="frame" x="0.0" y="148" width="375" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t75-Hr-CGT">
+                                <rect key="frame" x="0.0" y="227" width="375" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-m5-avZ">
+                                <rect key="frame" x="62" y="604" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.91887164115905762" green="0.19820627570152283" blue="0.13712874054908752" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1v-M2-7P3">
+                                <rect key="frame" x="293" y="604" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.26555889844894409" green="0.59197288751602173" blue="0.18419292569160461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzY-VA-RCf">
+                                <rect key="frame" x="263" y="516" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_check"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-FL-QdD">
+                                <rect key="frame" x="32" y="516" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_x"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzY-VA-RCf" secondAttribute="trailing" constant="32" id="1Fn-VD-I3j"/>
+                            <constraint firstItem="u1v-M2-7P3" firstAttribute="top" secondItem="bzY-VA-RCf" secondAttribute="bottom" constant="8" id="2hM-Gt-10B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ua7-m5-avZ" secondAttribute="bottom" constant="24" id="5ft-10-poL"/>
+                            <constraint firstItem="7RP-dc-YE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ty-9n-fAQ"/>
+                            <constraint firstItem="gtU-S8-Mc7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8vg-Df-ljV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7RP-dc-YE8" secondAttribute="trailing" id="LmG-80-nCO"/>
+                            <constraint firstItem="ua7-m5-avZ" firstAttribute="centerX" secondItem="3Nq-FL-QdD" secondAttribute="centerX" id="NJP-iN-Tjl"/>
+                            <constraint firstItem="3Nq-FL-QdD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="PNE-f8-BJH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t75-Hr-CGT" secondAttribute="trailing" id="Scc-zD-xH8"/>
+                            <constraint firstItem="ua7-m5-avZ" firstAttribute="top" secondItem="3Nq-FL-QdD" secondAttribute="bottom" constant="8" id="cDC-q2-T4X"/>
+                            <constraint firstItem="u1v-M2-7P3" firstAttribute="centerX" secondItem="bzY-VA-RCf" secondAttribute="centerX" id="cUI-zh-IDP"/>
+                            <constraint firstItem="t75-Hr-CGT" firstAttribute="top" secondItem="7RP-dc-YE8" secondAttribute="bottom" constant="50" id="dXb-5p-MVl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gtU-S8-Mc7" secondAttribute="trailing" id="fdX-im-jOH"/>
+                            <constraint firstItem="t75-Hr-CGT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oec-qV-b5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1v-M2-7P3" secondAttribute="bottom" constant="24" id="oms-Xl-qwP"/>
+                            <constraint firstItem="7RP-dc-YE8" firstAttribute="top" secondItem="gtU-S8-Mc7" secondAttribute="bottom" constant="8" id="tHI-W7-6Bn"/>
+                            <constraint firstItem="gtU-S8-Mc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="zlw-YS-gau"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="answerLabel" destination="t75-Hr-CGT" id="Vtb-ea-Lqg"/>
+                            <outlet property="correctCountLabel" destination="u1v-M2-7P3" id="9bf-PJ-ckf"/>
+                            <outlet property="hintLabel" destination="7RP-dc-YE8" id="QuT-BB-Nwb"/>
+                            <outlet property="incorrectCountLabel" destination="ua7-m5-avZ" id="sLS-Ue-G0J"/>
+                            <outlet property="promptLabel" destination="gtU-S8-Mc7" id="pjA-hg-Gx1"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_circle_check" width="80" height="80"/>
+        <image name="ic_circle_x" width="80" height="80"/>
+    </resources>
+</document>

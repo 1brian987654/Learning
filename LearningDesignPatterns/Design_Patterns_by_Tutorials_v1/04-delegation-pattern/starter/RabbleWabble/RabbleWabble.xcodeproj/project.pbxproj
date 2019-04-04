@@ -16,6 +16,7 @@
 		42AAE3951FE5C8FF001CA654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AAE3941FE5C8FF001CA654 /* Assets.xcassets */; };
 		42AAE3971FE5C954001CA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AAE3961FE5C954001CA654 /* LaunchScreen.storyboard */; };
 		42AAE3991FE5CDA1001CA654 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AAE3981FE5CDA1001CA654 /* QuestionView.swift */; };
+		6FEE83C12253590D00517CBA /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE83C02253590D00517CBA /* SelectQuestionGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		42AAE3941FE5C8FF001CA654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AAE3961FE5C954001CA654 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42AAE3981FE5CDA1001CA654 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		6FEE83C02253590D00517CBA /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				42AAE3731FE5C278001CA654 /* QuestionViewController.swift */,
+				6FEE83C02253590D00517CBA /* SelectQuestionGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				42AAE38B1FE5C483001CA654 /* QuestionGroup.swift in Sources */,
 				42AAE3991FE5CDA1001CA654 /* QuestionView.swift in Sources */,
 				42AAE3911FE5C728001CA654 /* QuestionGroupData.swift in Sources */,
+				6FEE83C12253590D00517CBA /* SelectQuestionGroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
