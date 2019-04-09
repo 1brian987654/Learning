@@ -51,13 +51,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzY-VA-RCf">
                                 <rect key="frame" x="263" y="516" width="80" height="80"/>
                                 <state key="normal" image="ic_circle_check"/>
+                                <connections>
+                                    <action selector="handleCorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDe-Wd-gn1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-FL-QdD">
                                 <rect key="frame" x="32" y="516" width="80" height="80"/>
                                 <state key="normal" image="ic_circle_x"/>
+                                <connections>
+                                    <action selector="handleIncorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4q-tW-lxL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzY-VA-RCf" secondAttribute="trailing" constant="32" id="1Fn-VD-I3j"/>
                             <constraint firstItem="u1v-M2-7P3" firstAttribute="top" secondItem="bzY-VA-RCf" secondAttribute="bottom" constant="8" id="2hM-Gt-10B"/>
@@ -84,10 +91,16 @@
                             <outlet property="hintLabel" destination="7RP-dc-YE8" id="QuT-BB-Nwb"/>
                             <outlet property="incorrectCountLabel" destination="ua7-m5-avZ" id="sLS-Ue-G0J"/>
                             <outlet property="promptLabel" destination="gtU-S8-Mc7" id="pjA-hg-Gx1"/>
+                            <outletCollection property="gestureRecognizers" destination="sTL-lu-buX" appends="YES" id="QIc-Mh-w42"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sTL-lu-buX">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="Ivl-B4-CC3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="52" y="28.335832083958024"/>
         </scene>
