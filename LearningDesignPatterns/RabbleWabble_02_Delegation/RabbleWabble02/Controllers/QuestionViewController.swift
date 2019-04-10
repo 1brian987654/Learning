@@ -8,11 +8,21 @@
 
 import UIKit
 
+// MARK: - QuestionViewControllerDelegate
+protocol QuestionViewControllerDelegate: class {
+    
+    // call it when the user presses the Cancel button
+    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionGroup, at questionIndex: Int)
+    
+    // call it when the user complete all of the questions
+    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionGroup)
+}
+
 class QuestionViewController: UIViewController {
     
     // MARK: - Instance Properties
-    // Model
-    //public var questionGroup = QuestionGroup.basicPhrases()
+    public var delegate: QuestionViewControllerDelegate?
+    
     public var questionGroup: QuestionGroup! {
         didSet {
             navigationItem.title = questionGroup.title
@@ -42,7 +52,18 @@ class QuestionViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupCancelButton()
         showQuestion()
+    }
+    
+    private func setupCancelButton() {
+        let action = #selector(handleCancelPressed(sender:))
+        let image = UIImage(named: "ic_menu")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, landscapeImagePhone: nil, style: .plain, target: self, action: action)
+    }
+    
+    @objc private func handleCancelPressed(sender: UIBarButtonItem) {
+        delegate?.questionViewController(self, didCancel: questionGroup, at: questionIndex)
     }
     
     /// you are writting code in the controller to manipulate the views based on the data in the models.
@@ -79,9 +100,9 @@ class QuestionViewController: UIViewController {
     private func showNextQuestion() {
         questionIndex += 1
         guard questionIndex < questionGroup.questions.count else {
+            delegate?.questionViewController(self, didComplete: questionGroup)
             return
         }
         showQuestion()
     }
 }
-
