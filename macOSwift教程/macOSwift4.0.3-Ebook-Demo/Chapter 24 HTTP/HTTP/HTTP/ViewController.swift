@@ -56,11 +56,9 @@ class ViewController: NSViewController {
         request.httpBody = postData
         
     
-        let dataTask = session.dataTask(with: request,
-                                                   completionHandler: {(data, response, error) -> Void in
+        let dataTask = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
             let responseStr = String(data: data!, encoding: String.Encoding.utf8)
             print("data =\(responseStr)")
-                               
         })
         dataTask.resume()
     }
