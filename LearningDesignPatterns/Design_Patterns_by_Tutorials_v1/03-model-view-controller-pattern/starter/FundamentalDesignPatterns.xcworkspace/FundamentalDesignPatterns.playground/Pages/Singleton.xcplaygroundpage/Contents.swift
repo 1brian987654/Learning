@@ -11,3 +11,30 @@
  
  ## Code Example
  */
+import UIKit
+
+//MARK: - Singleton
+let app = UIApplication.shared
+
+
+public class MySingleton {
+    
+    static let shared = MySingleton()
+    
+    private init() {}
+}
+
+let mySingleton =  MySingleton.shared
+let test = MySingleton.shared
+
+let defaultFileManager = FileManager.default
+let customfileManager = FileManager()
+
+public class MySingletonPlus {
+    static let shared = MySingletonPlus()
+    public init() {}
+}
+
+let sinPlus = MySingletonPlus.shared
+let sinPlus2 = MySingletonPlus()
+
