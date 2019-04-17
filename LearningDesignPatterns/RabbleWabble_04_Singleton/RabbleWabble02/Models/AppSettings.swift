@@ -19,15 +19,18 @@ public class AppSettings {
     public static let shared = AppSettings()
     
     // MARK: - Instance Properties
-    public var questionStrategyType: QuestionStrategyType {
-        get {
-            let rawValue = userDefaults.integer(forKey: Keys.questionStrategy)
-            return QuestionStrategyType(rawValue: rawValue)!
-        }
-        set {
-            userDefaults.set(newValue, forKey: Keys.questionStrategy)
-        }
-    }
+    public var questionStrategyType = QuestionStrategyType.sequential
+//    public var questionStrategyType: QuestionStrategyType {
+//        get {
+//            let rawValue = userDefaults.integer(forKey: Keys.questionStrategy)
+//            return QuestionStrategyType(rawValue: rawValue)!
+//        }
+//        set {
+//            userDefaults.set(newValue, forKey: Keys.questionStrategy)
+//        }
+//    }
+    
+    
     private let userDefaults = UserDefaults.standard
     
     // MARK: - Object Lifecycle

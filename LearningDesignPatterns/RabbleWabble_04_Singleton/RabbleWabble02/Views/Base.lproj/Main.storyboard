@@ -74,14 +74,38 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pGZ-cJ-PWN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Group" id="msX-YL-fgI"/>
+                    <navigationItem key="navigationItem" title="Select Question Group" id="msX-YL-fgI">
+                        <barButtonItem key="leftBarButtonItem" image="ic_settings" id="0P4-LZ-veV">
+                            <connections>
+                                <segue destination="Hk5-Q8-AtR" kind="show" id="YKa-Wy-KQZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Qzh-Zb-J0W" id="f7n-Zt-ue8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnE-T6-sMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157.59999999999999" y="22.938530734632685"/>
+            <point key="canvasLocation" x="167" y="28"/>
+        </scene>
+        <!--App Settings View Controller-->
+        <scene sceneID="WfG-8I-y8R">
+            <objects>
+                <tableViewController id="Hk5-Q8-AtR" customClass="AppSettingsViewController" customModule="RabbleWabble02" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZjZ-EV-xv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Hk5-Q8-AtR" id="zFg-rt-OAH"/>
+                            <outlet property="delegate" destination="Hk5-Q8-AtR" id="Pif-1b-voS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dj-eO-wrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="774"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -193,11 +217,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sln-cp-uRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-781.60000000000002" y="22.938530734632685"/>
+            <point key="canvasLocation" x="-777" y="28"/>
         </scene>
     </scenes>
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
     </resources>
 </document>
