@@ -9,7 +9,9 @@
 import Cocoa
 
 let kPersonKey: String = "PersonKey"
+
 class PersonProfile: NSObject , NSCoding {
+    
     @objc var name: String?
     @objc var age: NSInteger = 0
     @objc var address: String?

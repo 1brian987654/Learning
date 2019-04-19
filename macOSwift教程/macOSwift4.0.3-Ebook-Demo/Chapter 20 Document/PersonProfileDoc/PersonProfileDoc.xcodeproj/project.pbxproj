@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3E74DF22673C7300F11F55 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74DE22673C7300F11F55 /* Person.swift */; };
 		712584151D5610960056C523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712584141D5610960056C523 /* AppDelegate.swift */; };
 		712584171D5610960056C523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712584161D5610960056C523 /* ViewController.swift */; };
 		712584191D5610960056C523 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712584181D5610960056C523 /* Document.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F3E74DE22673C7300F11F55 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		712584111D5610960056C523 /* PersonProfileDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonProfileDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712584141D5610960056C523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712584161D5610960056C523 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				7125841C1D5610960056C523 /* Main.storyboard */,
 				7125841F1D5610960056C523 /* Info.plist */,
 				712584251D56125F0056C523 /* PersonProfile.swift */,
+				6F3E74DE22673C7300F11F55 /* Person.swift */,
 			);
 			path = PersonProfileDoc;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3E74DF22673C7300F11F55 /* Person.swift in Sources */,
 				712584171D5610960056C523 /* ViewController.swift in Sources */,
 				7125842E1D5829B40056C523 /* PackageDocument.swift in Sources */,
 				712584151D5610960056C523 /* AppDelegate.swift in Sources */,
@@ -265,6 +269,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonProfileDoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = macdev.io.PersonProfileDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -283,6 +288,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonProfileDoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = macdev.io.PersonProfileDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
