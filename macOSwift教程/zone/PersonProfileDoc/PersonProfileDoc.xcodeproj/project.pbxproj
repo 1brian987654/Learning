@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		6F3E74CA226714ED00F11F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74C9226714ED00F11F55 /* AppDelegate.swift */; };
 		6F3E74CC226714ED00F11F55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74CB226714ED00F11F55 /* ViewController.swift */; };
 		6F3E74CE226714ED00F11F55 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74CD226714ED00F11F55 /* Document.swift */; };
@@ -29,6 +30,30 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F3E74C3226714ED00F11F55 /* Frameworks */ = {
+=======
+		6F3E74A522649CB600F11F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74A422649CB600F11F55 /* AppDelegate.swift */; };
+		6F3E74A722649CB600F11F55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74A622649CB600F11F55 /* ViewController.swift */; };
+		6F3E74A922649CB600F11F55 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74A822649CB600F11F55 /* Document.swift */; };
+		6F3E74AB22649CB700F11F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E74AA22649CB700F11F55 /* Assets.xcassets */; };
+		6F3E74AE22649CB700F11F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E74AC22649CB700F11F55 /* Main.storyboard */; };
+		6F3E74B822649CE700F11F55 /* PersonProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E74B722649CE700F11F55 /* PersonProfile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F3E74A122649CB600F11F55 /* PersonProfileDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonProfileDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3E74A422649CB600F11F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F3E74A622649CB600F11F55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F3E74A822649CB600F11F55 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		6F3E74AA22649CB700F11F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F3E74AD22649CB700F11F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F3E74AF22649CB700F11F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3E74B022649CB700F11F55 /* PersonProfileDoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonProfileDoc.entitlements; sourceTree = "<group>"; };
+		6F3E74B722649CE700F11F55 /* PersonProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F3E749E22649CB600F11F55 /* Frameworks */ = {
+>>>>>>> Stashed changes
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +63,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
 		6F3E74BD226714ED00F11F55 = {
 			isa = PBXGroup;
 			children = (
@@ -50,10 +76,25 @@
 			isa = PBXGroup;
 			children = (
 				6F3E74C6226714ED00F11F55 /* PersonProfileDoc.app */,
+=======
+		6F3E749822649CB600F11F55 = {
+			isa = PBXGroup;
+			children = (
+				6F3E74A322649CB600F11F55 /* PersonProfileDoc */,
+				6F3E74A222649CB600F11F55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F3E74A222649CB600F11F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F3E74A122649CB600F11F55 /* PersonProfileDoc.app */,
+>>>>>>> Stashed changes
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		6F3E74C8226714ED00F11F55 /* PersonProfileDoc */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +106,34 @@
 				6F3E74D1226714EF00F11F55 /* Main.storyboard */,
 				6F3E74D4226714EF00F11F55 /* Info.plist */,
 				6F3E74D5226714EF00F11F55 /* PersonProfileDoc.entitlements */,
+=======
+		6F3E74A322649CB600F11F55 /* PersonProfileDoc */ = {
+			isa = PBXGroup;
+			children = (
+				6F3E74B622649CCF00F11F55 /* Modules */,
+				6F3E74A422649CB600F11F55 /* AppDelegate.swift */,
+				6F3E74A622649CB600F11F55 /* ViewController.swift */,
+				6F3E74A822649CB600F11F55 /* Document.swift */,
+				6F3E74AA22649CB700F11F55 /* Assets.xcassets */,
+				6F3E74AC22649CB700F11F55 /* Main.storyboard */,
+				6F3E74AF22649CB700F11F55 /* Info.plist */,
+				6F3E74B022649CB700F11F55 /* PersonProfileDoc.entitlements */,
+>>>>>>> Stashed changes
 			);
 			path = PersonProfileDoc;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		6F3E74DB2267151100F11F55 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				6F3E74DC2267153100F11F55 /* PersonProfile.swift */,
+=======
+		6F3E74B622649CCF00F11F55 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6F3E74B722649CE700F11F55 /* PersonProfile.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -80,6 +141,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< Updated upstream
 		6F3E74C5226714ED00F11F55 /* PersonProfileDoc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F3E74D8226714EF00F11F55 /* Build configuration list for PBXNativeTarget "PersonProfileDoc" */;
@@ -87,6 +149,15 @@
 				6F3E74C2226714ED00F11F55 /* Sources */,
 				6F3E74C3226714ED00F11F55 /* Frameworks */,
 				6F3E74C4226714ED00F11F55 /* Resources */,
+=======
+		6F3E74A022649CB600F11F55 /* PersonProfileDoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F3E74B322649CB700F11F55 /* Build configuration list for PBXNativeTarget "PersonProfileDoc" */;
+			buildPhases = (
+				6F3E749D22649CB600F11F55 /* Sources */,
+				6F3E749E22649CB600F11F55 /* Frameworks */,
+				6F3E749F22649CB600F11F55 /* Resources */,
+>>>>>>> Stashed changes
 			);
 			buildRules = (
 			);
@@ -94,25 +165,41 @@
 			);
 			name = PersonProfileDoc;
 			productName = PersonProfileDoc;
+<<<<<<< Updated upstream
 			productReference = 6F3E74C6226714ED00F11F55 /* PersonProfileDoc.app */;
+=======
+			productReference = 6F3E74A122649CB600F11F55 /* PersonProfileDoc.app */;
+>>>>>>> Stashed changes
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< Updated upstream
 		6F3E74BE226714ED00F11F55 /* Project object */ = {
+=======
+		6F3E749922649CB600F11F55 /* Project object */ = {
+>>>>>>> Stashed changes
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Brian;
 				TargetAttributes = {
+<<<<<<< Updated upstream
 					6F3E74C5226714ED00F11F55 = {
+=======
+					6F3E74A022649CB600F11F55 = {
+>>>>>>> Stashed changes
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
+<<<<<<< Updated upstream
 			buildConfigurationList = 6F3E74C1226714ED00F11F55 /* Build configuration list for PBXProject "PersonProfileDoc" */;
+=======
+			buildConfigurationList = 6F3E749C22649CB600F11F55 /* Build configuration list for PBXProject "PersonProfileDoc" */;
+>>>>>>> Stashed changes
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,29 +207,48 @@
 				en,
 				Base,
 			);
+<<<<<<< Updated upstream
 			mainGroup = 6F3E74BD226714ED00F11F55;
 			productRefGroup = 6F3E74C7226714ED00F11F55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6F3E74C5226714ED00F11F55 /* PersonProfileDoc */,
+=======
+			mainGroup = 6F3E749822649CB600F11F55;
+			productRefGroup = 6F3E74A222649CB600F11F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F3E74A022649CB600F11F55 /* PersonProfileDoc */,
+>>>>>>> Stashed changes
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< Updated upstream
 		6F3E74C4226714ED00F11F55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6F3E74D0226714EF00F11F55 /* Assets.xcassets in Resources */,
 				6F3E74D3226714EF00F11F55 /* Main.storyboard in Resources */,
+=======
+		6F3E749F22649CB600F11F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3E74AB22649CB700F11F55 /* Assets.xcassets in Resources */,
+				6F3E74AE22649CB700F11F55 /* Main.storyboard in Resources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< Updated upstream
 		6F3E74C2226714ED00F11F55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,16 +257,33 @@
 				6F3E74CA226714ED00F11F55 /* AppDelegate.swift in Sources */,
 				6F3E74DD2267153100F11F55 /* PersonProfile.swift in Sources */,
 				6F3E74CE226714ED00F11F55 /* Document.swift in Sources */,
+=======
+		6F3E749D22649CB600F11F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3E74A722649CB600F11F55 /* ViewController.swift in Sources */,
+				6F3E74A522649CB600F11F55 /* AppDelegate.swift in Sources */,
+				6F3E74B822649CE700F11F55 /* PersonProfile.swift in Sources */,
+				6F3E74A922649CB600F11F55 /* Document.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< Updated upstream
 		6F3E74D1226714EF00F11F55 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6F3E74D2226714EF00F11F55 /* Base */,
+=======
+		6F3E74AC22649CB700F11F55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F3E74AD22649CB700F11F55 /* Base */,
+>>>>>>> Stashed changes
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -168,7 +291,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< Updated upstream
 		6F3E74D6226714EF00F11F55 /* Debug */ = {
+=======
+		6F3E74B122649CB700F11F55 /* Debug */ = {
+>>>>>>> Stashed changes
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +356,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< Updated upstream
 		6F3E74D7226714EF00F11F55 /* Release */ = {
+=======
+		6F3E74B222649CB700F11F55 /* Release */ = {
+>>>>>>> Stashed changes
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +414,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< Updated upstream
 		6F3E74D9226714EF00F11F55 /* Debug */ = {
+=======
+		6F3E74B422649CB700F11F55 /* Debug */ = {
+>>>>>>> Stashed changes
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -302,7 +437,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< Updated upstream
 		6F3E74DA226714EF00F11F55 /* Release */ = {
+=======
+		6F3E74B522649CB700F11F55 /* Release */ = {
+>>>>>>> Stashed changes
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -324,25 +463,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< Updated upstream
 		6F3E74C1226714ED00F11F55 /* Build configuration list for PBXProject "PersonProfileDoc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F3E74D6226714EF00F11F55 /* Debug */,
 				6F3E74D7226714EF00F11F55 /* Release */,
+=======
+		6F3E749C22649CB600F11F55 /* Build configuration list for PBXProject "PersonProfileDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3E74B122649CB700F11F55 /* Debug */,
+				6F3E74B222649CB700F11F55 /* Release */,
+>>>>>>> Stashed changes
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< Updated upstream
 		6F3E74D8226714EF00F11F55 /* Build configuration list for PBXNativeTarget "PersonProfileDoc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F3E74D9226714EF00F11F55 /* Debug */,
 				6F3E74DA226714EF00F11F55 /* Release */,
+=======
+		6F3E74B322649CB700F11F55 /* Build configuration list for PBXNativeTarget "PersonProfileDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3E74B422649CB700F11F55 /* Debug */,
+				6F3E74B522649CB700F11F55 /* Release */,
+>>>>>>> Stashed changes
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< Updated upstream
 	rootObject = 6F3E74BE226714ED00F11F55 /* Project object */;
+=======
+	rootObject = 6F3E749922649CB600F11F55 /* Project object */;
+>>>>>>> Stashed changes
 }

@@ -2,6 +2,7 @@
 //  PersonProfile.swift
 //  PersonProfileDoc
 //
+<<<<<<< Updated upstream
 //  Created by ATLAS on 2019/4/17.
 //  Copyright © 2019 Brian. All rights reserved.
 //
@@ -10,6 +11,17 @@ import Cocoa
 
 let kPersonKey: String = "PersonKey"
 class PersonProfile: NSObject, NSCoding {
+=======
+//  Created by ATLAS on 2019/4/15.
+//  Copyright © 2019 Brian. All rights reserved.
+//
+
+import Foundation
+
+let kPersonKey: String = "PersonKey"
+class PersonProfile: NSObject, NSCoding {
+    
+>>>>>>> Stashed changes
     var name: String?
     var age: NSInteger = 0
     var address: String?
@@ -25,6 +37,7 @@ class PersonProfile: NSObject, NSCoding {
         aCoder.encode(image, forKey: "image")
     }
     
+<<<<<<< Updated upstream
     required convenience init?(coder aDecoder: NSCoder) {
         print("decodeWithCoder")
         self.init(coder: aDecoder)
@@ -58,5 +71,14 @@ class PersonProfile: NSObject, NSCoding {
         archiver.finishEncoding()
         return data as Data
     }
+=======
+    required init?(coder aDecoder: NSCoder) {
+        print("decodeWithCoder")
+        self.init(coder: aDecoder)
+    }
+    
+
+    
+>>>>>>> Stashed changes
     
 }
