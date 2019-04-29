@@ -18,6 +18,7 @@ public class SelectQuestionGroupViewController: UIViewController {
     }
     
     // MARK: - Properties
+    private let appSettings = AppSettings.shared
     public let questionGroups = QuestionGroup.allGroups()
     private var selectedQuestionGroup: QuestionGroup!
 }
@@ -66,7 +67,8 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
         }
         // P63: The common convention in iOS is to set delegate objects after an object is created
         //viewController.questionGroup = selectedQuestionGroup
-        viewController.questionStrategy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
+        //viewController.questionStrategy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
         viewController.delegate = self
     }
 }

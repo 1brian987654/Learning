@@ -31,8 +31,13 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
+<<<<<<< HEAD
             landmarkName = "QuestionStrategyType"
             landmarkType = "13">
+=======
+            landmarkName = "questionStrategy(for:)"
+            landmarkType = "7">
+>>>>>>> singleton
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
